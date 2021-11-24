@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_URI} \.svg$ [NC]
+RewriteRule ^(.*)$ index.php?path=$1 [NC,L,QSA]
